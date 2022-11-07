@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<style type="text/css">
+   #td{
+    color: #fff;
+  }
+  *{
+     box-sizing: border-box;
+  }
+   nav{
+    
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    justify-content:;
+    font-family: monospace;
+
+  }
+  nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+     transition: all 200ms ease;
+     font-size: 25px;
+  }
+  nav div{
+    background: #67dd;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 1px;
+    transition: all 200ms ease;
+  }
+  nav div:hover{
+    background: #dde;
+  
+  }
+  nav div:hover a{
+    color: #67dd;
+  }
+
+
+</style>
+
+    <title>CRUD</title>
+  </head>
+  <body style="background-color:midnightblue;">
+<nav class="navegador">
+   <div><a href="/">Inicio</a></div>
+  <div style="background-color:  #ff9900"><a style="color:#fff">Cargar</a></div>
+  <div><a href="/avanzado">Avanzado</a></div>
+  <div><a href="/ea">Movimientos</a></div>
+  
+ 
+</nav>
+
+<div class="container mt-4">
+  <div class="card border-secundary">
+    <div class="card-header">Nuevo registro</div>
+    <div class="card-body">
+      <form action="/save" method="POST">
+       
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" tabindex="1" value="">
+          </div>
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Feria</label>
+            <input type="number" class="form-control" id="feria" name="feria" tabindex="1">
+          </div>
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Combustible</label>
+            <input  type="number" class="form-control" id="combustible" name="combustible" tabindex="1">
+          </div>
+
+           <div class="mb-3">
+            <label for="sic" class="form-label">Alquileres</label>
+            <input  type="number" class="form-control" id="alquileres" name="alquileres" tabindex="1">
+          </div>
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Luz</label>
+            <input  type="number" class="form-control" id="luz" name="luz" tabindex="1">
+          </div>
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Empleados</label>
+            <input  type="number" class="form-control" id="empleados" name="empleados" tabindex="1">
+          </div>
+
+          <div class="mb-3">
+            <label for="sic" class="form-label">Ventas</label>
+            <input  type="number" class="form-control" id="ventas" name="ventas" tabindex="1">
+          </div>
+
+
+      
+ 
+          <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+          <a href="/" class="btn btn-secondary">Cancelar</a>
+      </form>
+
+      
+    </div>
+
+  </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
